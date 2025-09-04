@@ -1,0 +1,1 @@
+neovim config on Lazyvim
