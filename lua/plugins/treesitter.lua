@@ -13,9 +13,10 @@ return {
 		-- A list of parser names, or "all" (the listed parsers MUST always be installed)
 		"lua",
 		"c",
-		"python",
-	    },
-	    auto_install = false,
+		-- "python",
+		"ninja",
+		"rst",
+	    }, auto_install = false,
 	})
     end
 }
