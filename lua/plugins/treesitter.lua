@@ -16,6 +16,8 @@ return {
 		-- "python",
 		"ninja",
 		"rst",
+		"latex",
+		"bibtex",
 	    }, auto_install = false,
 	})
     end
