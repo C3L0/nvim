@@ -6,3 +6,7 @@ vim.keymap.set("i", "²", "<Esc>", { noremap = true, silent = true })
 vim.keymap.set("v", "²", "<Esc>", { noremap = true, silent = true })
 vim.keymap.set("c", "²", "<Esc>", { noremap = true, silent = true })
 
+vim.keymap.set("i", "`", "<Esc>", { noremap = true, silent = true })
+vim.keymap.set("v", "`", "<Esc>", { noremap = true, silent = true })
+vim.keymap.set("c", "`", "<Esc>", { noremap = true, silent = true })
+
