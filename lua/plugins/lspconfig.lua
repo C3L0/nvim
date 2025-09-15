@@ -19,6 +19,7 @@ return {
 
         -- Formatter / Linter
         'nvimtools/none-ls.nvim', -- null-ls fork
+	'jay-babu/mason-null-ls.nvim',
     },
     config = function()
         -------------------------------------------------------
@@ -72,6 +73,10 @@ return {
         -------------------------------------------------------
         -- null-ls (Black + isort)
         -------------------------------------------------------
+	require('mason-null-ls').setup({
+	    ensure_installed = { 'black', 'isort' },
+	    automatic_installation = true,
+	})
         local null_ls = require('null-ls')
         null_ls.setup({
             sources = {
@@ -86,7 +91,6 @@ return {
                 vim.lsp.buf.format({ async = false })
             end,
         })
-
 
         -------------------------------------------------------
         -- UI: Borders & diagnostics
